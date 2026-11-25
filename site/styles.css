@@ -85,7 +85,8 @@ input,select,textarea{width:100%;padding:10px 14px;border-radius:12px;border:1.5
 .cts{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
 footer{background:var(--g1);color:#fff;padding:40px 0 24px;font-size:14px}
 footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
-footer a{display:block;text-decoration:none;opacity:.85;margin:4px 0}footer h3{font-size:16px;color:var(--y);margin-bottom:8px}
+footer a{display:block;text-decoration:none;opacity:.85;margin:4px 0}footer h3{font-size:16px;color:var(--y);margin-bottom:8px}footer > .w > div:nth-child(4) span{display:block}
+footer .contact-icon{width:18px;height:18px;vertical-align:-4px;margin-right:6px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .cp2{text-align:center;opacity:.7;margin-top:24px;font-size:13px}.cp2 span{font-size:0}.cp2 span::after{content:"© 2026 Revathi Homemade Pickles. All rights reserved.";font-size:13px}
 #ov{position:fixed;inset:0;background:#0007;z-index:30;display:none}#ov.on{display:block}
 #dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--bg);z-index:31;transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}

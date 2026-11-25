@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded",()=>{
   const f=document.querySelector("footer > .w > div:nth-child(4)"),last=f&&f.querySelectorAll("a")[1];
   if(last) last.insertAdjacentHTML("afterend",`<a href="tel:+918374576752">+91 8374576752</a>`);
   document.querySelectorAll("footer a, .cts a").forEach(a=>{if(a.textContent.trim()==="9121763182")a.textContent="+91 9121763182";if(a.textContent.trim()==="9133991807")a.textContent="+91 9133991807";});
+  const spans=document.querySelectorAll("footer > .w > div:nth-child(4) span");
+  if(spans[0]) spans[0].innerHTML='<svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.3"></circle></svg> Hitech City, Siddiq Nagar, Road No. 3, near Hanuman Temple, Hyderabad';
+  if(spans[1]) spans[1].innerHTML='<svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"></path><circle cx="7" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle><path d="M16 10v3h5"></path></svg> No Cash on Delivery. Enjoy free shipping on orders above ₹1,000 across Andhra Pradesh and Telangana.';
 });
 const P=[];let n=0;
 const add=(nm,c,s,d)=>P.push({id:n++,nm,c,s,d});
