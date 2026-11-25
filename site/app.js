@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.querySelectorAll(".fq p").forEach(p=>{if(p.textContent.includes("9121763182"))p.textContent=p.textContent.replace("9133991807.","9133991807 or 8374576752.");});
   const ld=document.querySelector('script[type="application/ld+json"]');
   if(ld){try{const data=JSON.parse(ld.textContent);data.telephone=[...(data.telephone||[]),"+918374576752"];ld.textContent=JSON.stringify(data);}catch{}}
-  const f=document.querySelector("footer div div:last-child");
+  const f=document.querySelector("footer > .w > div:nth-child(4)");
   if(f) f.insertAdjacentHTML("afterbegin",`<a href="tel:+91${n}">${n}</a>`);
 });
 const P=[];let n=0;
