@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   if(ld){try{const data=JSON.parse(ld.textContent);data.telephone=[...(data.telephone||[]),"+918374576752"];ld.textContent=JSON.stringify(data);}catch{}}
   const f=document.querySelector("footer > .w > div:nth-child(4)"),last=f&&f.querySelectorAll("a")[1];
   if(last) last.insertAdjacentHTML("afterend",`<a href="tel:+918374576752">+91 8374576752</a>`);
+  document.querySelectorAll("footer a, .cts a").forEach(a=>{if(a.textContent.trim()==="9121763182")a.textContent="+91 9121763182";if(a.textContent.trim()==="9133991807")a.textContent="+91 9133991807";});
 });
 const P=[];let n=0;
 const add=(nm,c,s,d)=>P.push({id:n++,nm,c,s,d});
