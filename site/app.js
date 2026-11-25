@@ -1,6 +1,18 @@
 /* UPI payment: put your UPI ID between the quotes, for example "yourname@okbank". Leave empty to turn UPI payment off. */
 const UPI={id:"",name:"Revathi Homemade Pickles"};let pend=null;
-const NUM=["919121763182","919133991807"];
+const NUM=["919121763182","919133991807","918374576752"];
+
+document.addEventListener("DOMContentLoaded",()=>{
+  const n="8374576752";
+  document.querySelectorAll(".cts").forEach(c=>{
+    c.insertAdjacentHTML("beforeend",`<a class="btn bg" href="tel:+91${n}">📞 ${n}</a><a class="btn by" target="_blank" rel="noopener" href="https://wa.me/91${n}">WhatsApp ${n}</a>`);
+  });
+  document.querySelectorAll(".fq p").forEach(p=>{if(p.textContent.includes("9121763182"))p.textContent=p.textContent.replace("9133991807.","9133991807 or 8374576752.");});
+  const ld=document.querySelector('script[type="application/ld+json"]');
+  if(ld){try{const data=JSON.parse(ld.textContent);data.telephone=[...(data.telephone||[]),"+918374576752"];ld.textContent=JSON.stringify(data);}catch{}}
+  const f=document.querySelector("footer div div:last-child");
+  if(f) f.insertAdjacentHTML("afterbegin",`<a href="tel:+91${n}">${n}</a>`);
+});
 const P=[];let n=0;
 const add=(nm,c,s,d)=>P.push({id:n++,nm,c,s,d});
 "Tomato,Gongura,Kakarakaya,Pandumirchi,Kothimeera,Podhina,Amla (Usirikaya),Onion,Carrot,Chikkudukaya,Cauliflower,Drumstick,Lemon".split(",").forEach(x=>add(x,"veg",{"500g":375,"1Kg":750},"Homemade veg pickle"));
